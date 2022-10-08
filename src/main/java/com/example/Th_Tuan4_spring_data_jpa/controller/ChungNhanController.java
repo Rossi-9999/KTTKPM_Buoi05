@@ -28,13 +28,13 @@ public class ChungNhanController {
 	}
 	@GetMapping("/listMaMBOfNguyen")
 	public List<Object[]> listMaMBOfNguyen(String name){
-		return chungNhanDAOImpl.listMaMBOfNguyen(name);
+		return chungNhanDAOImpl.listMaMBOfNguyen("Nguyen");
 		
 	}
 
 	@GetMapping("/listMaMVOfLoaiMB")
 	public List<Object[]> listMaMVOfLoaiMB(String loai1,String loai2){
-		return chungNhanDAOImpl.listMaMVOfLoaiMB(loai1, loai2);
+		return chungNhanDAOImpl.listMaMVOfLoaiMB("Boeing", "Airbus");
 		
 	}
 	@GetMapping("/listLoaiByMaCB")
