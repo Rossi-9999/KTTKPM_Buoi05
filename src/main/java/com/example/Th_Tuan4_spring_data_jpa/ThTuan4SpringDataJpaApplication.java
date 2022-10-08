@@ -32,7 +32,7 @@ public class ThTuan4SpringDataJpaApplication {
 			System.out.println((mayBayDAOImpl.listTamBay10000(10000)));
 			// 3. Tìm các nhân viên có lương nhỏ hơn 10,000
 			System.out.println("3. Tìm các nhân viên có lương nhỏ hơn 10,000");
-			System.out.println((mayBayDAOImpl.listLoaiBoeing("Boeing")));
+			System.out.println((nhanVienDAOImpl.cau3()));
 			// 4. Cho biết các chuyến bay có độ dài đường bay nhỏ hơn 10.000km và lớn hơn 8.000km.
 			System.out.println("4. Cho biết các chuyến bay có độ dài đường bay nhỏ hơn 10.000km và lớn hơn 8.000km.");
 			System.out.println((chuyenBayDAOImpl.listChuyenBay10To8()));

@@ -17,7 +17,11 @@ public class MayBayController {
 	MayBayDAOImpl mayBayDAOImpl ;
 	
 	@GetMapping("/listTamBay10000")
-	public List<MayBay> listTamBay10000(int index){
+//	public List<MayBay> listTamBay10000(int index){
+//		return mayBayDAOImpl.listTamBay10000(10000);
+//		
+//	}
+	public List<MayBay> listTamBay10000(){
 		return mayBayDAOImpl.listTamBay10000(10000);
 		
 	}
