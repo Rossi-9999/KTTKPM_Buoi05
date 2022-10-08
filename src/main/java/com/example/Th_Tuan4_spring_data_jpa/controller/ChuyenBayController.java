@@ -63,7 +63,7 @@ public class ChuyenBayController {
 	}
 	@GetMapping("/listSumChiPhi")
 	public List<Object[]> listSumChiPhi(){
-		return listSumChiPhi();
+		return chuyenBayDAOImpl.listSumChiPhi();
 		
 	}
 }
