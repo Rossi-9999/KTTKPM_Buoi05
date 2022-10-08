@@ -39,18 +39,18 @@ public class ChungNhanController {
 	}
 	@GetMapping("/listLoaiByMaCB")
 	public List<Object[]> listLoaiByMaCB(String maCB){
-		return chungNhanDAOImpl.listLoaiByMaCB(maCB);
+		return chungNhanDAOImpl.listLoaiByMaCB("VN280");
 		
 	}
 	@GetMapping("/listChuyenBayByLoai")
 	public List<Object[]> listChuyenBayByLoai(String loai){
-		return chungNhanDAOImpl.listChuyenBayByLoai(loai);
+		return chungNhanDAOImpl.listChuyenBayByLoai("Airbus A320");
 		
 	}
 
 	@GetMapping("/listTenNVByLoai")
 	public List<Object[]> listTenNVByLoai(String loai){
-		return chungNhanDAOImpl.listTenNVByLoai(loai);
+		return chungNhanDAOImpl.listTenNVByLoai("Boeing");
 		
 	}
 
